@@ -1,0 +1,109 @@
+/* General styling */
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background-color: #f5f5f5;
+}
+
+/* Wrapper for the entire app */
+.app {
+  min-height: 100vh;
+  background-color: #f5f5f5;
+}
+
+/* Container with consistent padding and responsive design */
+.app-container {
+  padding: 20px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Appointment section for list and controls */
+.appointment-section {
+  margin-top: 20px;
+}
+
+/* Style for appointment container */
+.rectangle {
+  width: 70%;
+  background-color: white;
+  border-radius: 5px;
+  padding: 20px;
+  max-height: 60vh;
+  overflow-y: auto;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+
+/* Appointment item styling */
+.img-avatar {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+/* Flex layout for appointment items */
+.d-flex {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Divider between appointments */
+.border-bottom {
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 5px;
+  margin-bottom: 15px;
+}
+
+/* Button styling */
+.btn-style {
+  padding: 10px 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.btn-style:hover {
+  background-color: #0056b3;
+}
+
+/* Background for data section */
+.bg-light {
+  background-color: #f8f9fa;
+  padding: 15px;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+/* Text alignment */
+.text-center {
+  text-align: center;
+}
+
+/* Hide scrollbar */
+.rectangle::-webkit-scrollbar {
+  width: 0;
+  background: transparent;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .rectangle {
+    max-height: 50vh;
+  }
+
+  .btn-style {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+
+  .app-container {
+    padding: 10px;
+  }
+}
